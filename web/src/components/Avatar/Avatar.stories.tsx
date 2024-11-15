@@ -23,4 +23,32 @@ export default meta
 
 type Story = StoryObj<typeof Avatar>
 
-export const Primary: Story = {}
+export const WithImage: Story = {
+  args:{
+    avatar: '/images/placeholder__avatar-01.png',
+  }
+}
+
+export const Letter: Story = {
+  args:{
+    letter: 'T',
+  }
+}
+
+export const Icon: Story = {
+  args:{
+    icon: 'check',
+  }
+}
+export const WithSantaHat: Story = {
+  args:{
+    icon: 'check',
+    isSantaHatShowing: true,
+  }
+}
+export const WithIndicator: Story = {
+  args:{
+    icon: 'check',
+    indicator: 'success',
+  }
+}
